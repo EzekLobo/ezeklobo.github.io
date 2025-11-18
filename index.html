@@ -33,22 +33,23 @@
 <body class="bg-brand-dark text-white font-sans antialiased selection:bg-brand-red selection:text-white">
 
     <nav class="fixed w-full top-0 z-50 bg-brand-dark/90 backdrop-blur-sm border-b border-white/5 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-extrabold tracking-tighter">
-                EZEQUIEL<span class="text-brand-red">.</span>
-            </div>
+        <nav class="fixed w-full top-0 z-50 bg-brand-dark/90 backdrop-blur-sm border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 grid grid-cols-3 items-center">
+        
+        <div></div> 
+        
+        <ul class="hidden md:flex space-x-8 text-sm font-medium text-gray-300 items-center justify-self-center">
+            <li><a href="#home" class="hover:text-brand-red transition-colors">Home</a></li>
+            <li><a href="#experience" class="hover:text-brand-red transition-colors">Experiência</a></li>
+            <li><a href="#projects" class="hover:text-brand-red transition-colors">Projetos</a></li>
+            <li><a href="#education" class="hover:text-brand-red transition-colors">Formação</a></li>
+        </ul>
 
-            <ul class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
-                <li><a href="#home" class="hover:text-brand-red transition-colors">Home</a></li>
-                <li><a href="#experience" class="hover:text-brand-red transition-colors">Experiência</a></li>
-                <li><a href="#projects" class="hover:text-brand-red transition-colors">Projetos</a></li>
-                <li><a href="#education" class="hover:text-brand-red transition-colors">Formação</a></li>
-            </ul>
-
-            <a href="#contact" class="hidden md:inline-block bg-brand-red hover:bg-red-700 text-white px-5 py-2 rounded font-semibold transition-transform hover:scale-105">
-                Fale Comigo
-            </a>
-        </div>
+        <a href="#contact" class="hidden md:inline-block bg-brand-red hover:bg-red-700 text-white px-5 py-2 rounded font-semibold transition-transform hover:scale-105 justify-self-end">
+            Fale Comigo
+        </a>
+    </div>
+</nav>
     </nav>
 
     <header id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
@@ -92,8 +93,11 @@
                 </div>
 
                 <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#contact" class="bg-brand-red hover:bg-red-700 text-white px-8 py-3 rounded font-bold transition-all shadow-lg shadow-brand-red/20">
-                        Contato
+                    <a href="./assets/docs/curriculo.pdf" download="Curriculo_Ezequiel_Lobo.pdf" class="flex items-center gap-2 bg-brand-red hover:bg-red-700 text-white px-8 py-3 rounded font-bold transition-all shadow-lg shadow-brand-red/20">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                        Baixar CV
                     </a>
 
                     <a href="https://www.github.com/EzekLobo" target="_blank" class="flex items-center gap-2 px-8 py-3 rounded font-bold text-white border border-white/20 hover:bg-white/5 transition-all">
